@@ -1,6 +1,6 @@
 @media only screen and (max-width: 700px) {
     #header {
-        background-image: url(../Images/Phone_Background_Image.png);
+        background-image: url(Phone_Background_Image.png);
     }
 
     .text-box {
