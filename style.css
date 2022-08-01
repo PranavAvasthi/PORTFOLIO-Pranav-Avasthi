@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: white;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/Background_Image.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    padding: 10px 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+#logo {
+    font-size: 1.8rem;
+    font-family: 'Secular One';
+    color: rgb(27, 206, 27);
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    font-family: 'Secular One';
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: rgb(27, 206, 27);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+.text-box {
+    margin-top: 15%;
+    font-size: 17px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+}
+
+.text-box h1 {
+    font-size: 30px;
+}
+
+.text-box h2 {
+    font-size: 45px;
+    color: rgb(27, 206, 27);
+}
+
+.text-box h3 {
+    font-size: 25px;
+}
+
+.text-box p {
+    font-size: 25px;
+}
+
+.auto-input {
+    color: rgb(27, 206, 27);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.buttons a {
+    margin-top: 2%;
+    display: inline-block;
+    border-radius: 6px;
+    border: 2px solid rgb(27, 206, 27);
+    color: rgb(27, 206, 27);
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+#btn {
+    background: rgb(27, 206, 27);
+    color: black;
+    margin-left: 20px;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+    background-attachment: fixed; 
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    font-family: 'Ubuntu';
+}
+
+.about-col-2 p {
+    font-size: 1.1rem;
+    word-spacing: 2px;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-titles p {
+    font-size: 30px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 50%;
+    height: 3px;
+    background:rgb(27, 206, 27);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.timeline-items {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.timeline-items::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    left: calc(50% - 1px);
+}
+
+.timeline-item {
+    width: 100%;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-dot {
+    height: 16px;
+    width: 16px;
+    background-color: rgb(27, 206, 27);
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+}
+
+.timeline-date {
+    font-size: 18px;
+    color: rgb(27, 206, 27);
+    margin: 0 0 10px 0;
+}
+
+.timeline-content {
+    padding: 30px;
+    border: 2px solid rgb(27, 206, 27);
+    border-radius: 5px;
+}
+
+.timeline-content h3 {
+    font-size: 1.0rem;
+    color: whitesmoke;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-family: 'secular one';
+}
+
+.timeline-content p {
+    color: #c8c8c8;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 22px;
+    font-family: 'Poppins';
+}
+
+.skill-container {
+    max-width: 100%;
+}
+
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+#skills h1 {
+    font-family: 'Ubuntu';
+    margin-bottom: 40px;
+}
+
+#skills:nth-child(odd) {
+    background-color: #181818;
+}
+
+.bar {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.bar .thumb {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    border-radius: 60px;
+    margin-top: 20px;
+}
+
+.bar span {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(27, 206, 27);
+    border-radius: 50px;
+}
+
+.bar:nth-child(1) span {
+    width: 80%;
+}
+
+.bar:nth-child(2) span {
+    width: 75%;
+}
+
+.bar:nth-child(3) span {
+    width: 50%;
+}
+
+.bar:nth-child(4) span {
+    width: 70%;
+}
+
+.bar abbr {
+    width: 50px;
+    display: inline-block;
+    height: 35px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 35px;
+    background: rgb(27, 206, 27);
+}
+
+.bar:nth-child(1) abbr {
+    left: 80%;
+}
+
+.bar:nth-child(2) abbr {
+    left: 75%;
+}
+
+.bar:nth-child(3) abbr {
+    left: 50%;
+}
+
+.bar:nth-child(4) abbr {
+    left: 70%;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left h1 {
+    font-family: 'Ubuntu';
+}
+
+.contact-left p {
+    margin-top: 30px;
+    font-family: 'Poppins';
+}
+
+.contact-left p i{
+    color: rgb(27, 206, 27);
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.fa-instagram {
+    transition: transform 0.5s;
+}
+
+.social-icons .fa-instagram:hover {
+    color: #C13584;
+    transform: translateY(-5px);
+}
+
+.fa-twitter-square {
+    transition: transform 0.5s;
+}
+
+.social-icons .fa-twitter-square:hover {
+    color: #1DA1F2;
+    transform: translateY(-5px);
+}
+
+.fa-linkedin {
+    transition: transform 0.5s;
+}
+
+.social-icons .fa-linkedin:hover {
+    color: #0077b5;
+    transform: translateY(-5px);
+}
+
+.fa-square-github {
+    transition: transform 0.5s;
+}
+
+.social-icons .fa-square-github:hover {
+    color: #534f4f;
+    transform: translateY(-5px);
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid rgb(27, 206, 27);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    background: rgb(27, 206, 27);
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    font-family: 'Secular one';
+}
+
+form .btn {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#msg {
+    color: crimson;
+    margin-top: -40px;
+    display: block;
+}
+
+.go-top {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background: rgb(24, 222, 24);
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgb(27, 206, 27);
+}
+
+footer {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background: rgb(27, 206, 27);
+    font-weight: 300;
+    color: black;
+    margin-top: 20px;
+    font-weight: 900;
+    font-family: 'Poppins';
+}

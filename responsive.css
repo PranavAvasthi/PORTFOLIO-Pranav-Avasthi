@@ -1,0 +1,153 @@
+@media only screen and (max-width: 700px) {
+    #header {
+        background-image: url(../Images/Phone_Background_Image.png);
+    }
+
+    .text-box {
+        margin-top: 70%;
+    }
+
+    .text-box h1 {
+        font-size: 25px;
+        text-shadow: 2px 2px 4px grey;
+    }
+    
+    .text-box h2 {
+        font-size: 30px;
+        color: rgb(27, 206, 27);
+    }
+    
+    .text-box h3 {
+        font-size: 20px;
+        text-shadow: 2px 2px 4px grey;
+    }
+    
+    .text-box p {
+        font-size: 20px;
+        text-shadow: 2px 2px 4px grey;
+        font-weight: 600;
+    }
+    
+    .auto-input {
+        color: rgb(27, 206, 27);
+        font-size: 30px;
+        font-weight: 900;
+        text-shadow: none;
+    }
+
+    .buttons a {
+        padding: 5px 15px;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: black;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 1.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+
+    .about-col-2 p {
+        font-size: 16px;
+    }
+
+    .tab-titles p {
+        font-size: 20px;
+    }
+
+    .timeline-items::before {
+        left: 7px;
+    }
+    
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 37px;
+    }
+
+    .timeline-dot {
+        left: 0;
+    }
+
+    .timeline-date {
+        font-size: 1.0rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 0.9rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.8rem;
+    }
+
+    #skills h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .bar {
+        font-size: 16px;
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .contact-left h1 {
+        font-size: 40px;
+    }
+
+    form input, form textarea {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .btn, form .btn {
+        padding: 7px 25px;
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}

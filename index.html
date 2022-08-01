@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Pranav Avasthi
+    </title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+    <script src="https://kit.fontawesome.com/faa4834db5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p id="logo">Pranav Avasthi</p>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+
+            <div class="text-box">
+                <h1>Hi, I'm</h1>
+                <h2>Pranav Avasthi</h2>
+                <h3>My Life Revolves all Around a Cup of Coffee and a Laptop</h3>
+                <p>Exploring Different Fields Like <span class="auto-input"></span></p>
+            </div>
+
+            <div class="buttons">
+                <a href="#about">Know More</a>
+                <a href="#contact" id="btn">Contact Me</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../Images/About_Image.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hi, I'm Pranav Avasthi, a student who is currently pursuing 'BE' in Computer Science from
+                        Chitkara University. My Interest in Computers started with video games when I was a little kid.
+                        Studying Computer Science is very interesting as it helps you to develop problem-solving,
+                        critical
+                        thinking and complex analytical skills. My Love for Tech Field Brought me here. Video Editing is
+                        one of the Skill which I do in my free time as editing video is a great way to develop digital
+                        literacy skills.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links">Education</p>
+                    </div>
+
+                    <div class="timeline-items">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2019</div>
+                            <div class="timeline-content">
+                                <h3>KBDAV Centenary Public School</h3>
+                                <p>10th Class <br> Grade : 92.4% aggregate</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2021</div>
+                            <div class="timeline-content">
+                                <h3>Government Model Senior Secondary School</h3>
+                                <p>12th Class <br> Grade : 94.2% aggregate</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2021 - 2025</div>
+                            <div class="timeline-content">
+                                <h3>Chitkara University</h3>
+                                <p>BE Computer Science Engineering <br> Grade : 9.90 CGPA(Current)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="container skill-container">
+            <div class="bar">
+                <h3>HTML <abbr>80%</abbr></h3>
+                <div class="thumb"><span></span></div>
+            </div>
+            <div class="bar">
+                <h3>CSS <abbr>75%</abbr></h3>
+                <div class="thumb"><span></span></div>
+            </div>
+            <div class="bar">
+                <h3>JavaScript <abbr>50%</abbr></h3>
+                <div class="thumb"><span></span></div>
+            </div>
+            <div class="bar">
+                <h3>C/C++ <abbr>70%</abbr></h3>
+                <div class="thumb"><span></span></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>pranavavasthi44@gmail.com</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/pranav_40/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/pranav4twts" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/in/pranav-avasthi-077983228/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/PranavAvasthi" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="" class="btn">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="go-top"><i class="fa-solid fa-angle-up"></i></a>
+
+    <footer>
+        PRANAV AVASTHI | &copy; All Rights Reserved</p>
+    </footer>
+
+    <!-- -----GoogleForm----- -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxeSXWZGkV7ZUVteFPsQM3cTAsLJYr5fj2nW0DumeB3QFa5OVybznoAQVOCtqjur-KpqQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <!-- -----GSAP----- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <!-- -----Scroll Trigger----- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>
